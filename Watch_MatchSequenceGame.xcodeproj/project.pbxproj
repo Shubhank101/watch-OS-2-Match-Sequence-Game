@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99CEC8A81CAAF15D00D86D68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CEC8A71CAAF15D00D86D68 /* AppDelegate.swift */; };
+		99CEC8AA1CAAF15D00D86D68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CEC8A91CAAF15D00D86D68 /* ViewController.swift */; };
+		99CEC8AD1CAAF15D00D86D68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CEC8AB1CAAF15D00D86D68 /* Main.storyboard */; };
+		99CEC8AF1CAAF15D00D86D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CEC8AE1CAAF15D00D86D68 /* Assets.xcassets */; };
+		99CEC8B21CAAF15D00D86D68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CEC8B01CAAF15D00D86D68 /* LaunchScreen.storyboard */; };
+		99CEC8BF1CAAF18100D86D68 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CEC8BD1CAAF18100D86D68 /* Interface.storyboard */; };
+		99CEC8C11CAAF18100D86D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CEC8C01CAAF18100D86D68 /* Assets.xcassets */; };
+		99CEC8C81CAAF18100D86D68 /* MatchSequence Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99CEC8C71CAAF18100D86D68 /* MatchSequence Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99CEC8CF1CAAF18100D86D68 /* GamePlayInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CEC8CE1CAAF18100D86D68 /* GamePlayInterfaceController.swift */; };
+		99CEC8D51CAAF18100D86D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CEC8D41CAAF18100D86D68 /* Assets.xcassets */; };
+		99CEC8D91CAAF18100D86D68 /* MatchSequence.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 99CEC8BB1CAAF18100D86D68 /* MatchSequence.app */; };
+		99D6F6641CAD548A00588A63 /* CustomWKInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D6F6631CAD548A00588A63 /* CustomWKInterfaceController.swift */; };
+		99D6F6661CAF802A00588A63 /* MenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D6F6651CAF802A00588A63 /* MenuInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99CEC8C91CAAF18100D86D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CEC89C1CAAF15D00D86D68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CEC8C61CAAF18100D86D68;
+			remoteInfo = "MatchSequence Extension";
+		};
+		99CEC8D71CAAF18100D86D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CEC89C1CAAF15D00D86D68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CEC8BA1CAAF18100D86D68;
+			remoteInfo = MatchSequence;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99CEC8DD1CAAF18100D86D68 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99CEC8C81CAAF18100D86D68 /* MatchSequence Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CEC8E11CAAF18100D86D68 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				99CEC8D91CAAF18100D86D68 /* MatchSequence.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		99CEC8A41CAAF15D00D86D68 /* Watch_MatchSequenceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch_MatchSequenceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CEC8A71CAAF15D00D86D68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99CEC8A91CAAF15D00D86D68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99CEC8AC1CAAF15D00D86D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99CEC8AE1CAAF15D00D86D68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99CEC8B11CAAF15D00D86D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99CEC8B31CAAF15D00D86D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CEC8BB1CAAF18100D86D68 /* MatchSequence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchSequence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CEC8BE1CAAF18100D86D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		99CEC8C01CAAF18100D86D68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99CEC8C21CAAF18100D86D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CEC8C71CAAF18100D86D68 /* MatchSequence Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MatchSequence Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CEC8CD1CAAF18100D86D68 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		99CEC8CE1CAAF18100D86D68 /* GamePlayInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayInterfaceController.swift; sourceTree = "<group>"; };
+		99CEC8D41CAAF18100D86D68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99CEC8D61CAAF18100D86D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99D6F6631CAD548A00588A63 /* CustomWKInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWKInterfaceController.swift; sourceTree = "<group>"; };
+		99D6F6651CAF802A00588A63 /* MenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99CEC8A11CAAF15D00D86D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CEC8C41CAAF18100D86D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99CEC89B1CAAF15D00D86D68 = {
+			isa = PBXGroup;
+			children = (
+				99CEC8A61CAAF15D00D86D68 /* Watch_MatchSequenceGame */,
+				99CEC8BC1CAAF18100D86D68 /* MatchSequence */,
+				99CEC8CB1CAAF18100D86D68 /* MatchSequence Extension */,
+				99CEC8A51CAAF15D00D86D68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99CEC8A51CAAF15D00D86D68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99CEC8A41CAAF15D00D86D68 /* Watch_MatchSequenceGame.app */,
+				99CEC8BB1CAAF18100D86D68 /* MatchSequence.app */,
+				99CEC8C71CAAF18100D86D68 /* MatchSequence Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99CEC8A61CAAF15D00D86D68 /* Watch_MatchSequenceGame */ = {
+			isa = PBXGroup;
+			children = (
+				99CEC8A71CAAF15D00D86D68 /* AppDelegate.swift */,
+				99CEC8A91CAAF15D00D86D68 /* ViewController.swift */,
+				99CEC8AB1CAAF15D00D86D68 /* Main.storyboard */,
+				99CEC8AE1CAAF15D00D86D68 /* Assets.xcassets */,
+				99CEC8B01CAAF15D00D86D68 /* LaunchScreen.storyboard */,
+				99CEC8B31CAAF15D00D86D68 /* Info.plist */,
+			);
+			path = Watch_MatchSequenceGame;
+			sourceTree = "<group>";
+		};
+		99CEC8BC1CAAF18100D86D68 /* MatchSequence */ = {
+			isa = PBXGroup;
+			children = (
+				99CEC8BD1CAAF18100D86D68 /* Interface.storyboard */,
+				99CEC8C01CAAF18100D86D68 /* Assets.xcassets */,
+				99CEC8C21CAAF18100D86D68 /* Info.plist */,
+			);
+			path = MatchSequence;
+			sourceTree = "<group>";
+		};
+		99CEC8CB1CAAF18100D86D68 /* MatchSequence Extension */ = {
+			isa = PBXGroup;
+			children = (
+				99D6F6631CAD548A00588A63 /* CustomWKInterfaceController.swift */,
+				99D6F6651CAF802A00588A63 /* MenuInterfaceController.swift */,
+				99CEC8CE1CAAF18100D86D68 /* GamePlayInterfaceController.swift */,
+				99CEC8D41CAAF18100D86D68 /* Assets.xcassets */,
+				99CEC8D61CAAF18100D86D68 /* Info.plist */,
+				99CEC8CC1CAAF18100D86D68 /* Supporting Files */,
+			);
+			path = "MatchSequence Extension";
+			sourceTree = "<group>";
+		};
+		99CEC8CC1CAAF18100D86D68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99CEC8CD1CAAF18100D86D68 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99CEC8A31CAAF15D00D86D68 /* Watch_MatchSequenceGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CEC8B61CAAF15D00D86D68 /* Build configuration list for PBXNativeTarget "Watch_MatchSequenceGame" */;
+			buildPhases = (
+				99CEC8A01CAAF15D00D86D68 /* Sources */,
+				99CEC8A11CAAF15D00D86D68 /* Frameworks */,
+				99CEC8A21CAAF15D00D86D68 /* Resources */,
+				99CEC8E11CAAF18100D86D68 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CEC8D81CAAF18100D86D68 /* PBXTargetDependency */,
+			);
+			name = Watch_MatchSequenceGame;
+			productName = Watch_MatchSequenceGame;
+			productReference = 99CEC8A41CAAF15D00D86D68 /* Watch_MatchSequenceGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99CEC8BA1CAAF18100D86D68 /* MatchSequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CEC8DE1CAAF18100D86D68 /* Build configuration list for PBXNativeTarget "MatchSequence" */;
+			buildPhases = (
+				99CEC8B91CAAF18100D86D68 /* Resources */,
+				99CEC8DD1CAAF18100D86D68 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CEC8CA1CAAF18100D86D68 /* PBXTargetDependency */,
+			);
+			name = MatchSequence;
+			productName = MatchSequence;
+			productReference = 99CEC8BB1CAAF18100D86D68 /* MatchSequence.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		99CEC8C61CAAF18100D86D68 /* MatchSequence Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CEC8DA1CAAF18100D86D68 /* Build configuration list for PBXNativeTarget "MatchSequence Extension" */;
+			buildPhases = (
+				99CEC8C31CAAF18100D86D68 /* Sources */,
+				99CEC8C41CAAF18100D86D68 /* Frameworks */,
+				99CEC8C51CAAF18100D86D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MatchSequence Extension";
+			productName = "MatchSequence Extension";
+			productReference = 99CEC8C71CAAF18100D86D68 /* MatchSequence Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99CEC89C1CAAF15D00D86D68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.;
+				TargetAttributes = {
+					99CEC8A31CAAF15D00D86D68 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					99CEC8BA1CAAF18100D86D68 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					99CEC8C61CAAF18100D86D68 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 99CEC89F1CAAF15D00D86D68 /* Build configuration list for PBXProject "Watch_MatchSequenceGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99CEC89B1CAAF15D00D86D68;
+			productRefGroup = 99CEC8A51CAAF15D00D86D68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99CEC8A31CAAF15D00D86D68 /* Watch_MatchSequenceGame */,
+				99CEC8BA1CAAF18100D86D68 /* MatchSequence */,
+				99CEC8C61CAAF18100D86D68 /* MatchSequence Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99CEC8A21CAAF15D00D86D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CEC8B21CAAF15D00D86D68 /* LaunchScreen.storyboard in Resources */,
+				99CEC8AF1CAAF15D00D86D68 /* Assets.xcassets in Resources */,
+				99CEC8AD1CAAF15D00D86D68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CEC8B91CAAF18100D86D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CEC8C11CAAF18100D86D68 /* Assets.xcassets in Resources */,
+				99CEC8BF1CAAF18100D86D68 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CEC8C51CAAF18100D86D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CEC8D51CAAF18100D86D68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99CEC8A01CAAF15D00D86D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CEC8AA1CAAF15D00D86D68 /* ViewController.swift in Sources */,
+				99CEC8A81CAAF15D00D86D68 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CEC8C31CAAF18100D86D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D6F6641CAD548A00588A63 /* CustomWKInterfaceController.swift in Sources */,
+				99D6F6661CAF802A00588A63 /* MenuInterfaceController.swift in Sources */,
+				99CEC8CF1CAAF18100D86D68 /* GamePlayInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99CEC8CA1CAAF18100D86D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CEC8C61CAAF18100D86D68 /* MatchSequence Extension */;
+			targetProxy = 99CEC8C91CAAF18100D86D68 /* PBXContainerItemProxy */;
+		};
+		99CEC8D81CAAF18100D86D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CEC8BA1CAAF18100D86D68 /* MatchSequence */;
+			targetProxy = 99CEC8D71CAAF18100D86D68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99CEC8AB1CAAF15D00D86D68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CEC8AC1CAAF15D00D86D68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99CEC8B01CAAF15D00D86D68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CEC8B11CAAF15D00D86D68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		99CEC8BD1CAAF18100D86D68 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CEC8BE1CAAF18100D86D68 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99CEC8B41CAAF15D00D86D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99CEC8B51CAAF15D00D86D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99CEC8B71CAAF15D00D86D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Watch_MatchSequenceGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shubhank.Watch-MatchSequenceGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99CEC8B81CAAF15D00D86D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Watch_MatchSequenceGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shubhank.Watch-MatchSequenceGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		99CEC8DB1CAAF18100D86D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MatchSequence Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shubhank.Watch-MatchSequenceGame.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		99CEC8DC1CAAF18100D86D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MatchSequence Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shubhank.Watch-MatchSequenceGame.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		99CEC8DF1CAAF18100D86D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MatchSequence_Extension;
+				INFOPLIST_FILE = MatchSequence/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shubhank.Watch-MatchSequenceGame.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		99CEC8E01CAAF18100D86D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MatchSequence_Extension;
+				INFOPLIST_FILE = MatchSequence/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shubhank.Watch-MatchSequenceGame.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99CEC89F1CAAF15D00D86D68 /* Build configuration list for PBXProject "Watch_MatchSequenceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CEC8B41CAAF15D00D86D68 /* Debug */,
+				99CEC8B51CAAF15D00D86D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CEC8B61CAAF15D00D86D68 /* Build configuration list for PBXNativeTarget "Watch_MatchSequenceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CEC8B71CAAF15D00D86D68 /* Debug */,
+				99CEC8B81CAAF15D00D86D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CEC8DA1CAAF18100D86D68 /* Build configuration list for PBXNativeTarget "MatchSequence Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CEC8DB1CAAF18100D86D68 /* Debug */,
+				99CEC8DC1CAAF18100D86D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CEC8DE1CAAF18100D86D68 /* Build configuration list for PBXNativeTarget "MatchSequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CEC8DF1CAAF18100D86D68 /* Debug */,
+				99CEC8E01CAAF18100D86D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99CEC89C1CAAF15D00D86D68 /* Project object */;
+}
