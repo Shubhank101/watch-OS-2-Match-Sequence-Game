@@ -14,6 +14,8 @@ Download the project and run it from Xcode :)
 
 ## Demo
 
+![Demo](http://i.imgur.com/VBiFwFe.gif)
+
 Coming Soon
 
 ## Todo
