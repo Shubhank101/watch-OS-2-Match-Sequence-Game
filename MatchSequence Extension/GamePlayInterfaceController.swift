@@ -21,16 +21,25 @@ class GamePlayInterfaceController: WKInterfaceController {
 
     @IBOutlet var topTitleLabel: WKInterfaceLabel!
 
+    // Contains the sequence of buttons of the level
     var levelSequence:[WKInterfaceButton] = []
+    
+    // contains the user inputted sequence of buttons
     var userInputSequence:[WKInterfaceButton] = []
 
-    var timer:NSTimer!
-
+    // number of tiles in the sequence.. incremented on every level completed
     var gameTilesCount=3
+    
+    // speed by which tiles animation show. decrements on each level completed
     var gameSpeed:NSTimeInterval = 1.0;
+    
+    // index of the level sequence to animate
     var currentAnimatingTileIndex = 0
+    
+    // to show on top title label
     var level = 1
     
+    // dont take user input till the sequence animation has been done
     var userInputActivated = false
     
     //MARK: LIFE CYCLE METHODS
@@ -49,15 +58,7 @@ class GamePlayInterfaceController: WKInterfaceController {
     override func didAppear() {
         super.didAppear()
         
-	
-        delay(1.2) { () -> () in
-            self.animateWithDuration(0.4, animations: { () -> Void in
-                self.gameTilesUIGroup.setHidden(false)
-            },completion:  { () -> Void in
-                self.showLevelTitle()
-            } )
-
-        }
+        self.showLevelTitle()
     }
     
     override func didDeactivate() {
@@ -67,19 +68,20 @@ class GamePlayInterfaceController: WKInterfaceController {
     
     
     //MARK: LOGIC
-    
     func showLevelTitle() {
         self.topTitleLabel.setText("LEVEL \(self.level)")
         self.topTitleLabel.setTextColor(UIColor.whiteColor())
         
+        // animate the level title
         self.animateWithDuration(0.3, animations: { () -> Void in
-            self.topTitleLabel.setHidden(false)
+                self.topTitleLabel.setHidden(false)
             }, completion: { () -> Void in
+                // hide the label after delay
                 delay(1.0, closure: { () -> () in
                     self.animateWithDuration(0.3, animations: { () -> Void in
                         self.topTitleLabel.setHidden(true)
                         }, completion: { () -> Void in
-                            
+                            // start the sequence
                             self.makeSequence()
                             
                     })
@@ -87,6 +89,10 @@ class GamePlayInterfaceController: WKInterfaceController {
         })
     }
     
+    
+    /* 
+    / GENERATES THE RANDOM LEVEL SEQUENCE
+    */
     func makeSequence() {
         self.userInputSequence.removeAll()
         self.levelSequence.removeAll()
@@ -98,16 +104,19 @@ class GamePlayInterfaceController: WKInterfaceController {
         let array = [self.button1,self.button2,self.button3,self.button4]
         
         while (tilesAdded < gameTilesCount) {
+            // get random button from all the tiles
             let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
             let ele = array[randomIndex];
 
             if let last = self.levelSequence.last {
                 if last != ele {
+                    // if the random element isnt the last tile that was added. that is not two in a row.. add it to the sequence
                     self.levelSequence.append(ele)
                     tilesAdded++
                 }
             }
             else {
+                // if this is the first element. simply add to the seqeuence
                 self.levelSequence.append(ele)
                 tilesAdded++
             }
@@ -118,6 +127,7 @@ class GamePlayInterfaceController: WKInterfaceController {
     
     func animate() {
         if currentAnimatingTileIndex < gameTilesCount {
+            // animate all buttons in the level sequence
             let button = self.levelSequence[currentAnimatingTileIndex]
             
             self.animateWithDuration(self.gameSpeed , animations: { () -> Void in
@@ -147,7 +157,7 @@ class GamePlayInterfaceController: WKInterfaceController {
                     self.animateWithDuration(0.3, animations: { () -> Void in
                         self.topTitleLabel.setHidden(true)
                         }, completion: { () -> Void in
-                            // user tapping start
+                            // user tapping start... game start
                             self.userInputActivated = true
                     })
                 })
@@ -156,28 +166,18 @@ class GamePlayInterfaceController: WKInterfaceController {
        
     }
     
-    
-    func reset() {
-        self.animateWithDuration(0.5,animations:  { () -> Void in
-                self.button1.setAlpha(1)
-                self.button2.setAlpha(1)
-                self.button3.setAlpha(1)
-                self.button4.setAlpha(1)
-            }, completion:  {
-                () -> Void in
-                self.animate()
-            })
-    }
-    
-    
+   
     func checkIsUserSeqCompleted() {
+        // same number of taps completed as in the level sequence
         if userInputSequence.count == levelSequence.count {
             
             var success = true;
+            
             for i in 0..<levelSequence.count {
                 let levelSeqButton = levelSequence[i]
                 let userSeqButton = self.userInputSequence[i]
                 if levelSeqButton != userSeqButton {
+                    // the user didnt tap the correct sequence button for this index
                     success = false
                     break
                 }
@@ -200,6 +200,7 @@ class GamePlayInterfaceController: WKInterfaceController {
             }, completion: { () -> Void in
                 delay(1.2, closure: { () -> () in
                     if success {
+                        // if success increment the level and decrease tiles animation speed
                         self.gameTilesCount++
                         self.level++
                         self.gameSpeed = self.gameSpeed - 0.1
